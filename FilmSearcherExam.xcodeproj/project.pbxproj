@@ -15,16 +15,28 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Utils/UIImageViewExtensions.swift,
 			);
 			target = 6CD3F95A2EE17A5400EE86DD /* FilmSearcherExam */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
+		6CD3F97A2EE17B5700EE86DD /* Exceptions for "FilmSearcherExam" folder in "Copy Bundle Resources" phase from "FilmSearcherExam" target */ = {
+			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
+			buildPhase = 6CD3F9592EE17A5400EE86DD /* Resources */;
+			membershipExceptions = (
+				Utils/UIImageViewExtensions.swift,
+			);
+		};
+/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		6CD3F95D2EE17A5400EE86DD /* FilmSearcherExam */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				6CD3F96D2EE17A5500EE86DD /* Exceptions for "FilmSearcherExam" folder in "FilmSearcherExam" target */,
+				6CD3F97A2EE17B5700EE86DD /* Exceptions for "FilmSearcherExam" folder in "Copy Bundle Resources" phase from "FilmSearcherExam" target */,
 			);
 			path = FilmSearcherExam;
 			sourceTree = "<group>";
