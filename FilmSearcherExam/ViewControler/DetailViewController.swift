@@ -15,7 +15,7 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var typeLabel: UILabel?
     @IBOutlet weak var genreLabel: UILabel?
     @IBOutlet weak var directorLabel: UILabel?
-    @IBOutlet weak var plotLabel: UILabel?
+    @IBOutlet weak var plotLabel: UITextView?
 
     var film: Film!
 

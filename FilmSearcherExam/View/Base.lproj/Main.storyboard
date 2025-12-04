@@ -105,44 +105,6 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tg4-jo-kxi" userLabel="ContentView">
                                 <rect key="frame" x="0.0" y="172" width="393" height="528"/>
                                 <subviews>
-                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nub-oQ-rOA">
-                                        <rect key="frame" x="39" y="283" width="315" height="245"/>
-                                        <subviews>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsI-ty-c8b">
-                                                <rect key="frame" x="0.0" y="0.0" width="315" height="245"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plot" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" highlighted="YES" showsExpansionTextWhenTruncated="YES" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xTA-q9-wLP">
-                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="245"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                <constraints>
-                                                    <constraint firstItem="xTA-q9-wLP" firstAttribute="leading" secondItem="xsI-ty-c8b" secondAttribute="leading" id="TF1-33-fk9"/>
-                                                    <constraint firstAttribute="trailing" secondItem="xTA-q9-wLP" secondAttribute="trailing" id="ksZ-TW-R1A"/>
-                                                    <constraint firstAttribute="bottom" secondItem="xTA-q9-wLP" secondAttribute="bottom" id="tYf-Qo-Vy5"/>
-                                                    <constraint firstItem="xTA-q9-wLP" firstAttribute="top" secondItem="xsI-ty-c8b" secondAttribute="top" id="uL5-BB-tpp"/>
-                                                </constraints>
-                                            </view>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="top" secondItem="2yr-xr-7dp" secondAttribute="top" id="478-cM-Wha"/>
-                                            <constraint firstItem="2yr-xr-7dp" firstAttribute="trailing" secondItem="xsI-ty-c8b" secondAttribute="trailing" id="5RC-RZ-RoZ"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="bottom" secondItem="2yr-xr-7dp" secondAttribute="bottom" id="9V2-av-HUy"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="trailing" secondItem="2yr-xr-7dp" secondAttribute="trailing" id="I1a-ZT-jZb"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="leading" secondItem="0Zh-wN-im2" secondAttribute="leading" id="MRF-Uc-NZL"/>
-                                            <constraint firstItem="2yr-xr-7dp" firstAttribute="bottom" secondItem="xsI-ty-c8b" secondAttribute="bottom" id="UCt-Yo-FHG"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="bottom" secondItem="0Zh-wN-im2" secondAttribute="bottom" constant="245" id="ZpX-yF-JZS"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="top" secondItem="2yr-xr-7dp" secondAttribute="top" id="geC-Ia-UPP"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="leading" secondItem="2yr-xr-7dp" secondAttribute="leading" id="iRj-W2-G8g"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="trailing" secondItem="0Zh-wN-im2" secondAttribute="trailing" constant="315" id="lpv-h2-GdG"/>
-                                            <constraint firstItem="xsI-ty-c8b" firstAttribute="top" secondItem="0Zh-wN-im2" secondAttribute="top" constant="117" id="lwI-NJ-4ue"/>
-                                        </constraints>
-                                        <viewLayoutGuide key="contentLayoutGuide" id="0Zh-wN-im2"/>
-                                        <viewLayoutGuide key="frameLayoutGuide" id="2yr-xr-7dp"/>
-                                    </scrollView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UNM-MW-g80" userLabel="DetailContentView">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="269"/>
                                         <subviews>
@@ -203,13 +165,19 @@
                                             <constraint firstItem="rzy-xN-KoV" firstAttribute="leading" secondItem="Ges-lG-S7B" secondAttribute="leading" id="ysP-aF-YBg"/>
                                         </constraints>
                                     </view>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="bJz-1z-lHF">
+                                        <rect key="frame" x="0.0" y="268" width="393" height="260"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                        <color key="textColor" systemColor="labelColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="UNM-MW-g80" firstAttribute="leading" secondItem="tg4-jo-kxi" secondAttribute="leading" id="0vd-FU-qT4"/>
-                                    <constraint firstItem="nub-oQ-rOA" firstAttribute="centerX" secondItem="UNM-MW-g80" secondAttribute="centerX" id="HYA-cX-VPP"/>
-                                    <constraint firstAttribute="bottom" secondItem="nub-oQ-rOA" secondAttribute="bottom" id="eDd-7d-jQo"/>
-                                    <constraint firstItem="nub-oQ-rOA" firstAttribute="top" secondItem="UNM-MW-g80" secondAttribute="bottom" constant="14" id="m2L-J3-8ah"/>
                                     <constraint firstItem="UNM-MW-g80" firstAttribute="top" secondItem="tg4-jo-kxi" secondAttribute="top" id="pzc-l6-9So"/>
                                     <constraint firstAttribute="trailing" secondItem="UNM-MW-g80" secondAttribute="trailing" id="qLb-24-zHJ"/>
                                 </constraints>
@@ -218,6 +186,7 @@
                         <viewLayoutGuide key="safeArea" id="p8K-cM-gf6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p8K-cM-gf6" firstAttribute="bottom" secondItem="tg4-jo-kxi" secondAttribute="bottom" constant="84" id="LEy-GH-0fK"/>
                             <constraint firstItem="tg4-jo-kxi" firstAttribute="leading" secondItem="bBb-hE-dWD" secondAttribute="leading" id="StW-2F-urt"/>
                             <constraint firstAttribute="trailing" secondItem="tg4-jo-kxi" secondAttribute="trailing" id="TG3-Q1-MCR"/>
                             <constraint firstItem="tg4-jo-kxi" firstAttribute="top" secondItem="p8K-cM-gf6" secondAttribute="top" id="ewD-kN-OJa"/>
@@ -227,7 +196,7 @@
                     <connections>
                         <outlet property="directorLabel" destination="rzy-xN-KoV" id="v3X-PA-mz9"/>
                         <outlet property="genreLabel" destination="XLg-g6-TMa" id="aIi-m7-kai"/>
-                        <outlet property="plotLabel" destination="xTA-q9-wLP" id="NJz-0x-lYS"/>
+                        <outlet property="plotLabel" destination="bJz-1z-lHF" id="CV4-6i-eRu"/>
                         <outlet property="posterImageView" destination="VDm-0Q-I1D" id="chZ-gv-C6X"/>
                         <outlet property="typeLabel" destination="Ges-lG-S7B" id="4dc-Kv-Xe0"/>
                         <outlet property="yearLabel" destination="UKM-ee-Jbq" id="cgE-WN-qzs"/>
@@ -258,6 +227,9 @@
     </scenes>
     <color key="tintColor" systemColor="systemPinkColor"/>
     <resources>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
