@@ -28,7 +28,7 @@ class ServiceApi {
     }
     
     func getFilm(id: String) async -> Film? {
-        guard let url = URL(string: ServiceApi.SERVER_BASE_URL + "?s=" + id + "&apikey=31b9190c") else {
+        guard let url = URL(string: ServiceApi.SERVER_BASE_URL + "?i=" + id + "&apikey=31b9190c") else {
             print("Could not create URL")
             return nil
         }

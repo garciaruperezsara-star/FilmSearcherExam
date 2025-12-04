@@ -12,7 +12,7 @@ struct Film: Codable {
     let title: String
     let year: String
     let type: String
-    let poster: String?
+    let poster: String
     let duration: String?
     let genre: String?
     let director: String?

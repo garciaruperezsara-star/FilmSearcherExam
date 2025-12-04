@@ -27,8 +27,10 @@ class FilmViewCell: UITableViewCell {
             }
 
     func render(film : Film) {
-            
-                //thumbnailImageView.loadFrom(url: game.thumbnail)
-            }
+        titleLabel.text = film.title
+        yearLabel.text = film.year
+        typeLabel.text = film.type
+        posterImage.loadFrom(url: film.poster)
+    }
 
 }
